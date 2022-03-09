@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css" >
+	<script type="text/javascript" src="main.js"></script>
+	<title>Site Lucas</title>
+<head>
+
+
+
+<body onload="">
+
+	<menu_burger class="bandeau">
+
+		<a>
+			<svg class="menu_open" onclick="setVoletWidth()" width="70" height="70" viewBox="0 0 70 70">
+				<g id="open">
+					<rect id="barre_milieu" x="10" y="30" width="50" height="10"/>
+					<rect id="barre_haut" y="10" width="70" height="10"/>
+					<rect id="barre_bas" y="50" width="70" height="10"/>
+				</g>
+			</svg>
+		</a>
+
+		<a>
+			<svg class="menu_close" onclick="setVoletWidth()" width="70" height="70" viewBox="0 0 70 70">
+				<g id="close">
+					<rect id="barre1" x="13.7866" y="6.7157" width="70" height="10" transform="rotate(45 13.7866 6.7157)"/>
+					<rect id="barre2" x="7" y="55.4974" width="70" height="10" transform="rotate(-45 7 55.4974)"/>
+				</g>
+			</svg>
+		</a>
+
+		<a href="index.html">
+			<svg class="bouton_home" width="70" height="70" viewBox="0 0 70 70">
+				<g id="home">
+					<path id="maison" fill-rule="evenodd" clip-rule="evenodd" d="M35 10L10 35V60L35 60L60 60V35L35 10Z"/>
+				</g>
+			</svg>
+		</a>
+
+		<a>
+			<svg class="dark_theme" onclick="setTheme()" width="70" height="70" viewBox="0 0 70 70">
+				<g id="moon">
+						<path id="moon" d="M35.5 63C50.6878 63 63 50.6878 63 35.5V35.5C63 34.8829 62.0651 34.8138 61.8626 35.3967C59.0606 43.4613 51.3938 49.25 42.375 49.25C30.9841 49.25 21.75 40.0159 21.75 28.625C21.75 19.6062 27.5387 11.9394 35.6033 9.1374C36.1862 8.93488 36.1171 8 35.5 8V8C20.3122 8 8 20.3122 8 35.5C8 50.6878 20.3122 63 35.5 63Z"/>
+				</g>
+			</svg>
+		</a>
+
+		<a>
+			<svg class="light_theme" onclick="setTheme()" width="70" height="70" viewBox="0 0 70 70">
+				<g id="sun">
+					<circle id="rond" cx="35" cy="35" r="16.5"/>
+					<path id="rayons" d="M34.0781 5.12182C34.4217 4.30607 35.5777 4.30607 35.9213 5.12182L39.9899 14.781C40.1523 15.1666 39.7961 15.5742 39.3878 15.4828C37.9758 15.1668 36.5074 15 35 15C33.4924 15 32.0237 15.1668 30.6115 15.483C30.2032 15.5744 29.847 15.1668 30.0094 14.7812L34.0781 5.12182ZM24.3044 18.0971C24.6577 17.8731 24.6213 17.3332 24.2339 17.1754L14.5243 13.2212C13.7045 12.8874 12.8871 13.7047 13.221 14.5245L17.1752 24.2342C17.3329 24.6217 17.8729 24.658 18.0969 24.3047C19.6816 21.8055 21.8052 19.6818 24.3044 18.0971ZM15.4829 30.6118C15.5743 30.2035 15.1667 29.8473 14.7811 30.0097L5.12158 34.0785C4.30583 34.4221 4.30583 35.578 5.12158 35.9217L14.7812 39.9905C15.1667 40.1529 15.5744 39.7966 15.4829 39.3883C15.1668 37.9762 15 36.5076 15 35C15 33.4925 15.1668 32.024 15.4829 30.6118ZM18.097 45.6953C17.8729 45.342 17.333 45.3784 17.1752 45.7658L13.2211 55.4753C12.8872 56.2951 13.7046 57.1125 14.5244 56.7786L24.2338 52.8246C24.6212 52.6668 24.6576 52.1268 24.3043 51.9028C21.8052 50.3181 19.6816 48.1945 18.097 45.6953ZM30.6118 54.5171C30.2035 54.4257 29.8473 54.8333 30.0097 55.2189L34.0784 64.878C34.422 65.6938 35.5779 65.6938 35.9215 64.878L39.9901 55.2189C40.1525 54.8333 39.7963 54.4257 39.388 54.5171C37.9759 54.8332 36.5074 55 35 55C33.4925 55 32.024 54.8332 30.6118 54.5171ZM45.6958 51.9028C45.3425 52.1268 45.3789 52.6667 45.7663 52.8245L55.4752 56.7784C56.295 57.1122 57.1123 56.2948 56.7785 55.4751L52.8246 45.7661C52.6668 45.3787 52.1269 45.3423 51.9028 45.6956C50.3182 48.1946 48.1947 50.3181 45.6958 51.9028ZM54.5172 39.3878C54.4258 39.7961 54.8334 40.1523 55.219 39.9899L64.8778 35.9214C65.6935 35.5778 65.6936 34.4218 64.8778 34.0782L55.2189 30.0097C54.8333 29.8473 54.4257 30.2035 54.5171 30.6118C54.8332 32.024 55 33.4925 55 35C55 36.5074 54.8332 37.9758 54.5172 39.3878ZM51.9026 24.3039C52.1266 24.6572 52.6665 24.6208 52.8243 24.2334L56.7782 14.5244C57.1121 13.7047 56.2947 12.8873 55.4749 13.2211L45.7657 17.1751C45.3783 17.3329 45.3419 17.8729 45.6952 18.0969C48.1943 19.6815 50.3179 21.805 51.9026 24.3039Z"/>
+				</g>
+			</svg>
+		</a>
+
+		<a class="nom">HOME</a>
+
+		<header class="volet" id="wrap">
+			<a class="lien" href="./threejs/threejs.html">Three.js</a><br>
+			<a class="lien" href="./restaurant/restaurant.html">Restaurant</a><br>
+			<a class="lien">...</a><br>
+			<a class="lien">...</a><br>
+			<a class="lien">...</a><br>
+		</header>
+
+	</menu_burger>
+
+<br>
+
+	<p class="bienvenue">
+		Salut, moi c'est Lucas mais si t'as accès à ça c'est que tu dois déjà le savoir.
+		<br>
+		<br>
+		Si ce site existe c'est que j'aime bien faire de l'html et ce qui va avec.
+		<br>
+		Je m'en pour tester des trucs et m'améliorer.
+		<br>
+		<br>
+		Dans le menu en haut à droite tu peux trouver des créations que j'ai faite afin de m'exercer.
+		<br>
+		<br>
+		Je trouve pas autre chose à dire...
+		<br>
+		Bonne viste !
+	</p>
+
+
+
+
+
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+reolbjvgfbbi
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+fdfkvcdfscov
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+fzefbhefefirezf
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+<body>
+<html>
