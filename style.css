@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@900&display=swap');
+
+
+
+/* VARIABLES ESTHETIQUES OU TECHNIQUES GLOBALES */
+
+:root {
+	--fond : #24323F ;
+	--bandeau : #18212B ;
+	--boutons : #F29559 ;
+	--rouge : #D33F49 ;
+	--jaune : #EEC643 ;
+
+	--open_top : 0 ;
+	--close_top : -100px ;
+
+	--dark_top : 0 ;
+	--light_top : -100px ;
+
+	--width_volet : 0 ;
+}
+
+
+
+/* TOUTES LES PAGES */
+
+body {
+	margin : 0 ;
+	background : var( --fond ) ;
+	transition : 0.5s ease ;
+}
+
+p {
+	font-family : 'Varela Round' , sans-serif ;
+	color : var( --boutons ) ;
+}
+
+
+
+
+
+/* POUR LE BANDEAU */
+
+.bandeau {
+	position : fixed ;
+	background : var( --bandeau ) ;
+	box-shadow : 0px 5px 5px var( --bandeau ) ;
+	width : 200% ;
+	height : 80px ;
+	z-index : 700 ;
+}
+
+
+.menu_open {
+	position : fixed ;
+	z-index : 900 ;
+	top : var( --open_top ) ;
+    right : 0 ;
+	fill : var( --boutons ) ;
+}
+.menu_close {
+	position : fixed ;
+	z-index : 900 ;
+	top : var( --close_top ) ;
+    right : 0 ;
+	fill : var( --boutons ) ;
+}
+
+
+.bouton_home {
+	position : fixed ;
+	z-index : 900 ;
+	top : 0 ;
+    left : 0 ;
+	fill : var( --boutons ) ;
+}
+
+
+.dark_theme {
+	position : fixed ;
+	z-index : 900 ;
+	top : var( --dark_top ) ;
+    left : 80px ;
+	fill : var( --boutons ) ;
+}
+.light_theme {
+	position : fixed ;
+	z-index : 900 ;
+	top : var( --light_top ) ;
+    left : 80px ;
+	fill : var( --boutons ) ;
+}
+
+
+.nom {
+	position : fixed ;
+	z-index : 800 ;
+	width : 100% ;
+	top : 0 ;
+	text-align : center ;
+	font-size : 70px ;
+	color : var( --boutons ) ;
+	font-family : 'Righteous' , cursive ;
+}
+
+
+
+/* VOLET */
+
+.volet {
+	position : fixed ;
+	background : var( --bandeau ) ;
+	width : var( --width_volet ) ;
+	height : 500px ;
+	transition : 0.5s ease ;
+	z-index : 850 ;
+	padding-top : 90px ;
+	opacity : var( --volet_opacity ) ;
+	top : 0px ;
+    right : 0px ;
+}
+
+.lien {
+	font-family : 'M PLUS 1' , sans-serif ;
+	color : var( --boutons ) ;
+	text-decoration : none ;
+	font-size : 20px ;
+	margin-left: 20px ;
+}
+
+
+
+/* PAGE PRINCIPALE */
+
+.bienvenue {
+	margin-top : 300px ;
+	text-align : center ;
+	font-size: 20px ;
+}
+
+
+
+
+
+/* PAGE THREEJS */
+
+.abandon {
+	margin-top : 200px ;
+	text-align : center ;
+	font-size : 200px ;
+	font-family : 'Kanit' , sans-serif ;
+	color : var(--rouge) ;
+}
